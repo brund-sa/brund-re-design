@@ -75,7 +75,7 @@
 <div class="nav__background nav-black"></div>
 
 <div id="nav__overlay" class="nav__overlay"></div>
-
+<div class="mama"><img src="scroll.png" alt="scroll Brund"/></div>
 <nav class="nav nav-white static">
     <div class="nav__loading nav__list" aria-hidden="true">Loading</div>
 
@@ -97,12 +97,12 @@
 
 </div>
 
-   <!--  <ul class="main-nav nav__list mobile-list nav__list-main">
+  <ul class="main-nav nav__list mobile-list nav__list-main">
     
         <li class="nav-item "
             data-main-nav-position="">
             <div class="nav-link-wrapper">
-                <a href="/projects/"
+                <a href="#"
                    rel="nofollow"
                    class="nav-link"
                    data-transition="slide-up">Projects</a>
@@ -112,7 +112,7 @@
         <li class="nav-item "
             data-main-nav-position="">
             <div class="nav-link-wrapper">
-                <a href="/studio/"
+                <a href="#"
                    rel="nofollow"
                    class="nav-link"
                    data-transition="slide-up">Studio</a>
@@ -122,7 +122,7 @@
         <li class="nav-item "
             data-main-nav-position="">
             <div class="nav-link-wrapper">
-                <a href="/contact/"
+                <a href="#"
                    rel="nofollow"
                    class="nav-link"
                    data-transition="slide-up">Contact</a>
@@ -146,7 +146,7 @@
                    rel="nofollow">ar</a>
             </li>
         
-        </ul> -->
+        </ul> 
     
 
     <button type="button" class="nav-btn nav__mobile-btn">
@@ -177,28 +177,27 @@
 
 
 </div>
-<!-- 
     <ul class="main-nav nav__list mobile-list nav__list-main">
 
         
             <li class="nav-item "
                 data-main-nav-position="">
                 <div class="nav-link-wrapper">
-                    <a href="/projects/" class="nav-link" data-transition="slide-up">Projects</a>
+                    <a href="#" class="nav-link" data-transition="slide-up">Projects</a>
                 </div>
             </li>
         
             <li class="nav-item "
                 data-main-nav-position="">
                 <div class="nav-link-wrapper">
-                    <a href="/studio/" class="nav-link" data-transition="slide-up">Studio</a>
+                    <a href="#" class="nav-link" data-transition="slide-up">Studio</a>
                 </div>
             </li>
         
             <li class="nav-item "
                 data-main-nav-position="">
                 <div class="nav-link-wrapper">
-                    <a href="/contact/" class="nav-link" data-transition="slide-up">Contact</a>
+                    <a href="#" class="nav-link" data-transition="slide-up">Contact</a>
                 </div>
             </li>
         
@@ -215,7 +214,7 @@
             <a href="/fr/" class="no-ajax-link ">Ar</a>
         </li>
         
-        </ul> -->
+        </ul> 
     
 
     <button type="button" class="nav-btn nav__mobile-btn">
@@ -227,7 +226,7 @@
 </nav>
 
 
-<div id="interactive-scroller" class="interactive-scroller">
+<!-- <div id="interactive-scroller" class="interactive-scroller">
     <div class="interactive-scroller__layout interactive-scroller__layout-white">
         <div class="interactive-scroller__layout-inner">
             <div class="interactive-scroller__over-area">
@@ -254,7 +253,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <div id="cursor" class="cursor">
         <div></div>
         <div></div>
@@ -539,7 +538,7 @@
             </div>
 
 
-            <div class="project-list_title js-animate show-scroll" data-callback="show.Scroll()"><span>Selected projects</span></div>
+            <!-- <div class="project-list_title js-animate show-scroll" data-callback="show.Scroll()"><span>Selected projects</span></div>
             
             
 <div class="project-list_wrapper u-move page-block" id="project-list" data-node-type="ProjectList">
@@ -559,7 +558,7 @@
 
 
     
-    <div id="project-image-6b4a9244b0f98852e51318efa62c0b83"
+    <div id=""
          class="project-image even">
         <div class="project-image_inner">
             <div class="project-image_inner-reverse">
@@ -783,7 +782,7 @@
                 </div>
             
         </div>
-    </div>
+    </div> -->
 
 
                     <div class="main_background main_background-black"></div>
@@ -899,5 +898,17 @@
 
     <script nomodule defer crossorigin src="/js/legacy.vendors~app.js"></script>
     <script nomodule defer crossorigin src="/js/legacy.app.js"></script>
+    <script>
+        window.addEventListener(
+        "scroll",
+        () => {
+            document.body.style.setProperty(
+            "--scroll",
+            window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+            );
+        },
+        false
+        );
+    </script>
 </body>
 </html>

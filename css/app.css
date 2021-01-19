@@ -6,6 +6,24 @@
  */
 
  /* addition */
+ .mama {
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  z-index: 999;
+
+  animation: rotate 6s linear infinite;
+}
+
+.mama img {
+  width: 90px;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
  .papa {
   color: #000;
   opacity: 1 !important;
